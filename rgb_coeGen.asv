@@ -1,0 +1,105 @@
+% Legge l'immagine RGB
+name = 'Lena';
+dim = 32;
+img_rgb = imread([name, '.jpeg']);
+
+% Riduci l'immagine ad una dimensione di 32x32 pixel
+res_img = imresize(img_rgb, [dim, dim]);
+
+% Estrae i canali rosso, verde e blu
+red = res_img(:,:,1);
+green = res_img(:,:,2);
+blue = res_img(:,:,3);
+
+% %% Mirroring
+% % Definisco le immagini estese
+% red_ext = zeros(dim+2, dim+2);
+% green_ext = zeros(dim+2, dim+2);
+% blue_ext = zeros(dim+2, dim+2);
+% 
+% % Copio l'immagine
+% for i = 1:dim
+%     for j = 1:dim
+%         red_ext(i+1, j+1) = red(i, j);
+%         green_ext(i+1, j+1) = green(i, j);
+%         blue_ext(i+1, j+1) = blue(i, j);
+%     end
+% end
+% 
+% % Applico l'estensione
+% for i=1:dim+1
+%     red_ext(1, i) = red_ext(3, i);
+%     green_ext(1, i) = green_ext(3, i);
+%     blue_ext(1, i) = blue_ext(3, i);
+% end
+% 
+% for i=1:dim+1
+%     red_ext(i, dim+2) = red_ext(i, dim);
+%     green_ext(i, dim+2) = green_ext(i, dim);
+%     blue_ext(i, dim+2) = blue_ext(i, dim);
+% end
+% 
+% for i=1:dim+1
+%     red_ext(dim+2, dim+3-i) = red_ext(dim, dim+3-i);
+%     green_ext(dim+2, dim+3-i) = green_ext(dim, dim+3-i);
+%     blue_ext(dim+2, dim+3-i) = blue_ext(dim, dim+3-i);
+% end
+% 
+% for i=1:dim+1
+%     red_ext(dim+3-i, 1) = red_ext(dim+3-i, 3);
+%     green_ext(dim+3-i, 1) = green_ext(dim+3-i, 3);
+%     blue_ext(dim+3-i, 1) = blue_ext(dim+3-i, 3);
+% end
+% 
+% red_ext(1, 1) = red_ext(2, 2);
+% green_ext(1, 1) = green_ext(2, 2);
+% blue_ext(1, 1) = blue_ext(2, 2);
+% 
+% name = ['_mirr_', name];
+
+%%
+
+% Apri i file txt in modalità di scrittura
+filepath_behav = 'project_pix\project_pix.sim\sim_1\behav\xsim\';
+filepath_impl = 'project_pix\project_pix.sim\sim_1\impl\timing\xsim\';
+filename = [name, sprintf('%dx%d', dim, dim)];
+fileID_r = fopen([filepath_behav, 'R', filename, '.txt'], 'w');
+fileID_g = fopen([filepath_behav, 'G', filename, '.txt'], 'w');
+fileID_b = fopen([filepath_behav, 'B', filename, '.txt'], 'w');
+
+% Scrivi l'intestazione dei file COE
+% fprintf(fileID_r, 'memory_initialization_radix=10;\n');
+% fprintf(fileID_r, 'memory_initialization_vector=\n');
+% fprintf(fileID_g, 'memory_initialization_radix=10;\n');
+% fprintf(fileID_g, 'memory_initialization_vector=\n');
+% fprintf(fileID_b, 'memory_initialization_radix=10;\n');
+% fprintf(fileID_b, 'memory_initialization_vector=\n');
+
+% Scrivi i valori dei pixel nei file txt
+fprintf(fileID_r, '0,\n');
+fprintf(fileID_g, '0,\n');
+fprintf(fileID_b, '0,\n');
+for i = 1:dim
+    for j = 1:dim
+        fprintf(fileID_r, '%d,\n', red(i, j));
+        fprintf(fileID_g, '%d,\n', green(i, j));
+        fprintf(fileID_b, '%d,\n', blue(i, j));
+    end
+end
+
+% Chiudi i file
+fclose(fileID_r);
+fclose(fileID_g);
+fclose(fileID_b);
+
+%% 
+% Step 3: Copy the file
+[status, message, messageId] = copyfile([filepath_behav, 'R', filename, '.txt'], [filepath_impl, 'R', filename, '.txt']);
+
+% Check if the copy was successful
+if status
+    disp('File copied successfully.');
+else
+    disp(['File copy failed. Error: ', message]);
+end
+
