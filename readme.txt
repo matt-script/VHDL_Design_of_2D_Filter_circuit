@@ -2,7 +2,7 @@ DISCLAIMER!!! NON MODIFICARE I NOMI O I PATH DELLE CARTELLE PRESENTI!
 
 
 
-ISTRUZIONI PER SIMULARE I RISULTATI
+### ISTRUZIONI PER SIMULARE I RISULTATI
 
 STEP 0. Estrarre il file 'project_pix.xpr' selezionando la directory '...\project_pixV3'.
 
