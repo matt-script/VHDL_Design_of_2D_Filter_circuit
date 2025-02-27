@@ -13,5 +13,3 @@
 #### 6. Start and run the 'rgb_filter' program.
 
 #### 7. Share the resulting image and evaluate the results.
-
-Translated with DeepL.com (free version)
