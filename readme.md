@@ -1,17 +1,17 @@
-# ISTRUZIONI PER LA SIMULAZIONE
+## SIMULATION INSTRUCTIONS
 
-### STEP 0. Estrarre il file 'project_pix.xpr' selezionando la directory '...\project_pixV3'.
+#### 1. Extract the file 'project_pix.xpr' by selecting the directory '...\project_pixV3'.
 
-### STEP 1. Avviare e runnare il programma 'rgb_coeGen' (assicurarsi che il file matlab venga aperto da questa cartella) dopo aver inserito la dimensione scelta per l'immagine nella variabile 'dim').
+#### 2. Start and run the 'rgb_coeGen' program (make sure the matlab file is opened from this directory) after entering the chosen image size in the 'dim' variable).
 
-### STEP 2. Avviare il progetto Vivado 'project_pix'.
+#### 3. Start the Vivado 'project_pix' project.
 
-### STEP 3. Configurare il modulo TOP e il testbench TB_TOP_PIX con la dimensione scelta, poi lanciare l'implementazione (per le strategie da utilizzare chiedere informazioni agli sviluppatori).
+#### 4. Configure the TOP module and testbench TB_TOP_PIX with the chosen size, then launch the implementation (ask the developers for strategies to use).
 
-### STEP 4. Lanciare la simulazione behavioral o la timing post implementazione commentando rispettivamente la riga 159 o 158 del tb.
+#### 5. Launch the behavioral simulation or timing post implementation by commenting on line 159 or 158 of tb, respectively.
 
-### STEP 5. Avviare e runnare il programma 'rgb_filtro'.
+#### 6. Start and run the 'rgb_filter' program.
 
-### STEP 6. Condividere l'immagine così ottenuta e valutare i risultati.
+#### 7. Share the resulting image and evaluate the results.
 
-## FINE
+Translated with DeepL.com (free version)
