@@ -1,0 +1,61 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d3c6c427a8d54eb0b1398baf4984ab8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_TOP_PIX_behav xil_defaultlib.TB_TOP_PIX -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture behavioral of entity xil_defaultlib.REG8 [reg8_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP_BUF [\TOP_BUF(d=32)\]
+Compiling architecture muxf8_v of entity unisim.MUXF8 [muxf8_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111000000001111...]
+Compiling architecture muxf7_v of entity unisim.MUXF7 [muxf7_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux8_72bit [mux8_72bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.padd [padd_default]
+Compiling architecture behavioral of entity xil_defaultlib.mirror [mirror_default]
+Compiling architecture behavioral of entity xil_defaultlib.bufgen [bufgen_default]
+Compiling architecture behavioral of entity xil_defaultlib.newbuf [\newbuf(d=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.FIRST [first_default]
+Compiling architecture behavioral of entity xil_defaultlib.SECOND [second_default]
+Compiling architecture carry4_v of entity unisim.CARRY4 [carry4_default]
+Compiling architecture behavioral of entity xil_defaultlib.FastRCA_4bit [fastrca_4bit_default]
+Compiling architecture csa of entity xil_defaultlib.ADDER12 [adder12_default]
+Compiling architecture behavioral of entity xil_defaultlib.PIPE_TO_ADDER [pipe_to_adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.CARRY_SAVE4_8 [carry_save4_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX [mux_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth [booth_default]
+Compiling architecture behavioral of entity xil_defaultlib.plus [plus_default]
+Compiling architecture behavioral of entity xil_defaultlib.Partial_products [partial_products_default]
+Compiling architecture behavioral of entity xil_defaultlib.STEP1 [step1_default]
+Compiling architecture behavioral of entity xil_defaultlib.STEP2 [step2_default]
+Compiling architecture csa of entity xil_defaultlib.ADDER20 [adder20_default]
+Compiling architecture behavioral of entity xil_defaultlib.Pipeline [pipeline_default]
+Compiling architecture behavioral of entity xil_defaultlib.CARRY_SAVE [carry_save_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP_MULTI [top_multi_default]
+Compiling architecture behavioral of entity xil_defaultlib.STEP1_3 [step1_3_default]
+Compiling architecture behavioral of entity xil_defaultlib.Pipeline_3 [pipeline_3_default]
+Compiling architecture behavioral of entity xil_defaultlib.CARRY_SAVE_3 [carry_save_3_default]
+Compiling architecture behavioral of entity xil_defaultlib.SATURATION [saturation_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP_PIX [top_pix_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo [\fifo(n=33)\]
+Compiling architecture behavioral of entity xil_defaultlib.fifo [\fifo(n=16)\]
+Compiling architecture behavioral of entity xil_defaultlib.state_dec [\state_dec(ddim=32,bdim=5)\]
+Compiling architecture behavioral of entity xil_defaultlib.fifo [\fifo(n=15)\]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_top_pix
+Built simulation snapshot TB_TOP_PIX_behav
