@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"TB_TOP_PIX_func_impl.vhd" \
+"../../../../../project_pix.srcs/sim_1/imports/new/TB_TOP_PIX.vhd" \
+
+# Do not sort compile order
+nosort
