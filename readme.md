@@ -15,30 +15,6 @@ This repository contains the **Isotropic Image Filtering Circuit**, a digital sy
 ✔️ Optimized with **pipelined architecture** for high-frequency performance.  
 ✔️ Uses **Carry-Save Adder Trees** and **Booth Multipliers** for efficient computations.  
 
-## 📜 Project Structure  
-
-📂 isotropic-filter/
-├── 📁 src/ # Source files (VHDL)
-│ ├── 📄 top.vhd # Top-level module
-│ ├── 📄 fsm.vhd # Finite State Machine (configurable version)
-│ ├── 📄 buffer.vhd # Image buffering module
-│ ├── 📄 convolution.vhd # Convolution processing module
-│ ├── 📄 booth_mult.vhd # Booth multiplier implementation
-│ ├── 📄 saturation.vhd # Pixel saturation (ensures 8-bit output)
-│ ├── 📄 rgb2gray.vhd # RGB to grayscale converter (if enabled)
-│ └── ... # Other supporting files
-│
-├── 📁 simulations/ # Simulation results and testbenches
-│ ├── 📄 testbench.vhd # Testbench for functional verification
-│ ├── 📁 waveforms/ # Behavioral and timing simulations
-│ └── ...
-│
-├── 📁 docs/ # Documentation
-│ ├── 📄 design_report.pdf # Full project documentation
-│ └── 📁 images/ # Block diagrams and FSM states
-│
-└── 📄 README.md # Project description (this file
-
 ## ⚙️ How It Works  
 
 ### 🏗 Architecture  
