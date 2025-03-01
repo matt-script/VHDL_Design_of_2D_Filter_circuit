@@ -57,9 +57,3 @@ Program the FPGA and test with an image input.
 ### 📄 Documentation
 Design Report: Detailed explanation of circuit design and optimizations.
 Block Diagrams: Visual representation of data flow.
-
-### 🤝 Contributors
-Matteo Marino
-Raffaele Petrolo
-Davide Di Gesu
-Arnaldo Palombino
