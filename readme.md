@@ -44,7 +44,7 @@ To maximize speed, the design:
 
 ### 🛠 Requirements  
 - **FPGA Board**: Xilinx Virtex-7  
-- **Toolchain**: Xilinx Vivado + Vitis HLS  
+- **Toolchain**: Xilinx Vivado + Matlab  
 - **Languages**: VHDL  
 
 ### 🔧 Synthesizing on FPGA
