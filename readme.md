@@ -53,7 +53,3 @@ Add the source files from /src/.
 Configure target device (Virtex-7).
 Run Synthesis → Implementation → Bitstream Generation.
 Program the FPGA and test with an image input.
-
-### 📄 Documentation
-Design Report: Detailed explanation of circuit design and optimizations.
-Block Diagrams: Visual representation of data flow.
